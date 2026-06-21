@@ -17,7 +17,7 @@ def check_url(url):
     #long url are considered suspicious
     if len(url) > 50:
         score += 1
-        reasons.append("Url is unusually long")
+        reasons.append("URL is unusually long")
 
 
     #too many hyphens one
@@ -55,19 +55,19 @@ def check_url(url):
 
 
 def show_result(score):
-    print("\n--\ analysis result /--")
+    print("\n-- analysis result --")
 
     if score <= 1:
         print("Status: LIKELY SAFE")
     elif score <= 3:
         print("Status: SUSPICIOUS")
     else:
-        print("Status: POTENTIAL FISHING wEBSITE")
+        print("Status: POTENTIAL PHISHING wEBSITE")
 
 
 
 print("=" * 50)
-print("Simple phishing url detector")
+print("simple phishing URL detector")
 print("=" * 50)
 
 url = input("Enter a website url: ")
