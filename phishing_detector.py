@@ -7,7 +7,7 @@ def check_url(url):
     reasons = []
 
     # checks ip address
-    ip_pattern = r"^(http://|https://)?(\d{1,3}\.){3}\d{1,3}"
+    ip_pattern = r"^(http://|https://)?(\d{1,3}\.){3}\d{1,3}"   #matches IP address format like 192.168.1.1
 
 
     if re.match(ip_pattern, url):
