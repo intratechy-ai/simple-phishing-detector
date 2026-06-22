@@ -12,5 +12,4 @@ Technology:
 1)Python
 2)Regex
 
-Note:
-This is only for educational purposes and not be used as a complete phishing detection system.
+Thank You
