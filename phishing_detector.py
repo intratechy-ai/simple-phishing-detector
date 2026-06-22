@@ -24,15 +24,7 @@ def check_url(url):
         reasons.append("contains multiple hyphens")
         
     #most commne phising keywords
-    suspicious_signal_words =[
-        "login","verify",
-        "secure",
-        "update",
-        "banking",
-        "account",
-        "signin",
-        "confirm"
-    ]
+    suspicious_signal_words =["login","verify","secure","update","banking","account","signin","confirm"]
     for word in suspicious_signal_words:
         if word in url.lower():
 
@@ -61,9 +53,9 @@ def show_result(score):
 
 
 
-print("="*50)
+print(" ="*50)
 print("Simple phishing url detector")
-print("="*50)
+print(" ="*50)
 
 url = input("Enter a website url: ")
 score, reasons = check_url(url)
