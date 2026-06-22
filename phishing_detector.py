@@ -55,7 +55,7 @@ def check_url(url):
 
 
 def show_result(score):
-    print("\n--\ analysis result /--")
+    print("\n[analysis result] ")
 
     if score <= 1:
         print("Status: LIKELY SAFE")
@@ -66,9 +66,9 @@ def show_result(score):
 
 
 
-print("=" * 50)
+print("="*50)
 print("Simple phishing url detector")
-print("=" * 50)
+print("="*50)
 
 url = input("Enter a website url: ")
 score, reasons = check_url(url)
@@ -87,5 +87,4 @@ else:
 
 
 print("\nRisk Score:", score)
-print("\nNote:")
-print("This is an educational project and should not\t be used as a complete phishing detection system.")
+print("\nScan completed successfully.")
