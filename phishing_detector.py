@@ -8,8 +8,6 @@ def check_url(url):
 
     # checks ip address
     ip_pattern = r"^(http://|https://)?(\d{1,3}\.){3}\d{1,3}"   #matches IP address format like 192.168.1.1
-
-
     if re.match(ip_pattern, url):
         score +=2
         reasons.append("uses an IP address instead of a domain name")
@@ -24,9 +22,7 @@ def check_url(url):
     if url.count("-") >= 2:
         score+= 1
         reasons.append("contains multiple hyphens")
-
-
-
+        
     #most commne phising keywords
     suspicious_signal_words =[
         "login","verify",
@@ -37,7 +33,6 @@ def check_url(url):
         "signin",
         "confirm"
     ]
-
     for word in suspicious_signal_words:
         if word in url.lower():
 
